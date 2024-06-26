@@ -1,0 +1,13 @@
+com\awbd\subscription\controller\CustomizedExceptionHandler.class
+com\awbd\subscription\exceptions\ExceptionPattern.class
+com\awbd\subscription\services\AppointmentService.class
+com\awbd\subscription\SubscriptionApplication.class
+com\awbd\subscription\model\Appointment.class
+com\awbd\subscription\services\CouponServiceProxy.class
+com\awbd\subscription\exceptions\NotFoundException.class
+com\awbd\subscription\config\WebMvcConfig.class
+com\awbd\subscription\repositories\AppointmentRepository.class
+com\awbd\subscription\controller\AppointmentController.class
+com\awbd\subscription\model\Coupon.class
+com\awbd\subscription\config\SwaggerConfig.class
+com\awbd\subscription\services\IAppointmentService.class

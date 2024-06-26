@@ -6,11 +6,12 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties("percentage")
+@ConfigurationProperties("coupon")
 @Getter
 @Setter
 public class PropertiesConfig {
-    private int month;
-    private int year;
     private String versionId;
+    private int month;
+    private String socialCategory;
+    private String specialities;
 }

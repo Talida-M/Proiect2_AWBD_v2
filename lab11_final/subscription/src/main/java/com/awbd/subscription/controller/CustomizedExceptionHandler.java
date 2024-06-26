@@ -2,7 +2,7 @@ package com.awbd.subscription.controller;
 
 
 import com.awbd.subscription.exceptions.ExceptionPattern;
-import com.awbd.subscription.exceptions.SubscriptionNotFound;
+import com.awbd.subscription.exceptions.NotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -18,7 +18,7 @@ import java.util.Date;
 public class CustomizedExceptionHandler
     extends ResponseEntityExceptionHandler {
 
-    @ExceptionHandler(SubscriptionNotFound.class)
+    @ExceptionHandler(NotFoundException.class)
     protected ResponseEntity<Object> handleException(RuntimeException ex, WebRequest request) {
         ExceptionPattern exception = new ExceptionPattern(new Date(), ex.getMessage(), request.getDescription(true));
         return new ResponseEntity(exception, HttpStatus.NOT_FOUND);
